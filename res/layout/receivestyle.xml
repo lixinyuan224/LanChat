@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+		    android:id="@+id/voicefirstreceiveview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center_horizontal">
+		    <TextView
+		        android:id="@+id/islinkView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Large Text"
+		        android:gravity="center_horizontal"
+		        android:textSize="30sp"/>
+			 <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" 
+			    android:gravity="center_horizontal">
+			    <Button
+			        android:id="@+id/notafirm"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/reject" />
+			
+			    <Button
+			        android:id="@+id/afirm"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/assure" />
+		    </LinearLayout>
+	    </LinearLayout>
+    
+	   <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	   </ScrollView>
+		    
+		<LinearLayout 
+		    android:id="@+id/voicesecondreceiveview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:layout_gravity="center_horizontal"
+		    android:visibility="gone">
+	    
+		      <TextView
+			        android:id="@+id/voicelinkView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Large Text"
+			        android:textSize="30sp"
+			         />
+
+		    <Button
+		        android:id="@+id/voicecancleConnect2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/cancle"
+		        android:layout_gravity="center_horizontal" />
+	    </LinearLayout>
+
+</LinearLayout>

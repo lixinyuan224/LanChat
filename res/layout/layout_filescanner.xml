@@ -1,0 +1,44 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bg_main" >
+	  <LinearLayout 
+    	android:background="@drawable/b2"
+        android:layout_width="fill_parent"
+        android:layout_height="45sp"
+       >
+
+        <ImageView
+            android:id="@+id/filescanner_return"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.11"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/button_back" />
+
+         <TextView
+             android:id="@+id/filescanner_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:paddingTop="8sp"
+             android:layout_weight="1"
+             android:text="@string/chooseFile"
+             android:textColor="@android:color/black"
+             android:textSize="25sp" />
+
+        </LinearLayout>
+		<ListView 
+		    android:id="@+id/lsview"
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			android:drawSelectorOnTop="false"
+			android:descendantFocusability="blocksDescendants" 
+	/>
+	<!-- android:drawSelectorOnTop="true"点击某一条记录，颜色会显示在最上面，记录上的文字被遮住 -->
+</LinearLayout>

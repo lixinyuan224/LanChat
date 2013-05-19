@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+		<LinearLayout 
+			    android:id="@+id/firstview2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:gravity="center_horizontal" >
+		    <TextView
+		        android:id="@+id/textviewre"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="text  text"
+		        android:textSize="30sp" />
+		
+		    <LinearLayout 
+		       android:layout_width="wrap_content"
+		  	   android:layout_height="wrap_content" 
+		  	   android:orientation="horizontal"
+		  	 >
+		        <Button 
+		            android:id="@+id/confirm"
+		            android:layout_width="wrap_content"
+		  	        android:layout_height="wrap_content"
+		            android:text="接收"/>
+		          <Button 
+		            android:id="@+id/reject"
+		            android:layout_width="wrap_content"
+		  	        android:layout_height="wrap_content"
+		            android:text="拒绝"/>
+		    </LinearLayout>
+		    </LinearLayout>
+		      <ScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" >
+		    </ScrollView>
+			<LinearLayout 
+		    android:id="@+id/secondview2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:layout_gravity="center_horizontal"
+		     android:visibility="gone" >
+		    
+		    <TextView
+		        android:id="@+id/textfilename2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="文件名。txt"
+		       android:layout_gravity="center_horizontal"
+		        android:textSize="25sp" 
+		    />
+				
+ 
+      
+		     <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="传输中："
+		        	 />
+				    <ProgressBar
+				        android:id="@+id/progressBar2"
+				        style="?android:attr/progressBarStyleHorizontal"
+				     	android:max="100"
+				        android:progress="0"
+				        android:layout_width="0dip"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				  		/>
+				    <TextView
+				        android:id="@+id/percent2"
+				        android:layout_width="50dp"
+				        android:layout_height="wrap_content"
+				        android:gravity="center_horizontal"
+				        android:text="0%"
+				        />
+				</LinearLayout>
+		</LinearLayout>
+</LinearLayout>

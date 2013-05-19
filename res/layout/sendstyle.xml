@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout 
+		    android:id="@+id/voicefirstsendview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal" 
+		    >
+	    <TextView
+	        android:id="@+id/linkView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="1"
+	        android:textSize="30sp"
+	         />
+	
+	    <Button
+	        android:id="@+id/cancleConnect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancle" />
+	</LinearLayout>
+	    
+    
+		    <ScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1" >
+		    </ScrollView>
+		    
+		<LinearLayout 
+		    android:id="@+id/voicesecondsendview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:gravity="center_horizontal"
+		    android:visibility="gone">
+		    
+		     <TextView
+		        android:id="@+id/linkView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2"
+		        android:textSize="30sp"
+		         />
+
+		    <Button
+		        android:id="@+id/cancleConnect2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/cancle" />
+    
+		</LinearLayout>
+
+</LinearLayout>

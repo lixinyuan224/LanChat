@@ -1,0 +1,9 @@
+<GridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:id="@+id/expression_grid"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchMode="columnWidth"
+	android:numColumns="4"
+/>
+

@@ -1,0 +1,181 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0e0" >
+
+    <LinearLayout
+        android:id="@+id/title1"
+       
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/b2">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userinfo" 
+            android:textSize="31sp" 
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/content_item"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" >
+
+        <Button
+            android:id="@+id/bu_findPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_myPhoto"
+            android:layout_alignRight="@+id/et_no2"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:id="@+id/img_myPhoto"
+            android:src="@drawable/png_0022"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/et_no2"
+            android:layout_toRightOf="@+id/tv_myPhoto" 
+            
+          />
+
+        <TextView
+            android:id="@+id/tv_myPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_no2"
+            android:text="@string/headImg"
+            android:textSize="28sp" 
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_no2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_no1"
+            android:layout_alignTop="@+id/tv_no2"
+            android:inputType="text"
+            android:textSize="28sp" 
+            />
+
+        <TextView
+            android:id="@+id/tv_no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_no1"
+            android:text=""
+            android:textSize="28sp" 
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_no1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_signature"
+            android:layout_alignTop="@+id/tv_no1"
+            
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_signature"
+            android:text="@string/name"
+            android:textSize="28sp" 
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_signature"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_sex"
+            android:layout_alignTop="@+id/tv_signature"
+            
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_sex"
+            android:text="@string/signatrue"
+            android:textSize="28sp" 
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_name"
+            android:layout_alignTop="@+id/tv_sex"
+           
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_name"
+            android:text="@string/sex"
+            android:textSize="28sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/nickname"
+            android:textSize="28sp"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom" 
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:background="@drawable/b2" >
+
+        <Button
+            android:id="@+id/bu_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancle" 
+            />
+
+        <Button
+            android:id="@+id/bu_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assure" />
+    </LinearLayout>
+
+</LinearLayout>

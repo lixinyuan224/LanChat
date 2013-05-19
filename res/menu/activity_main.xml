@@ -1,0 +1,21 @@
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:id="@+id/menu_settings"
+        android:title="@string/editPersonalInfo"
+        android:orderInCategory="1"
+         android:showAsAction="withText"
+       	android:icon="@drawable/personalinfo" />
+     <item 
+         android:id="@+id/menu_about"
+    	 android:title="@string/about"
+    	  android:showAsAction="withText"
+     	 android:orderInCategory="2"
+  	 	 android:icon="@drawable/about" />
+     <item 
+         android:id="@+id/menu_exit"
+        android:title="@string/exit"
+        android:orderInCategory="3"
+        android:showAsAction="withText"
+        android:icon="@drawable/exit" />
+</menu>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentTop="true"
+        android:background="#0099FF" 
+        >
+
+		 <ImageView
+            android:id="@+id/return_viewGroup"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+           	android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:text=""
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+   
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ScrollView>
+
+   	  
+    
+   	  <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0099FF"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/balloon_send" 
+            android:background="#CCCCCC"/>
+		 <ImageView
+            android:id="@+id/btn_receive"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/png_1050_up"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+           
+            android:contentDescription="@string/app_name"
+            />
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_receive"
+            android:contentDescription="@string/app_name"
+            android:background="@color/white"
+            android:textSize="18sp" 
+            android:inputType="text"/>
+    </RelativeLayout>
+    	
+   	    
+	<LinearLayout
+        android:id="@+id/choose_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:background="@drawable/backgroudstyle"
+        android:orientation="horizontal">
+        <ImageButton 
+            android:id="@+id/expression"
+            android:layout_margin="5dp"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginTop="6dp"
+        	android:src="@drawable/emoticon_smile1"
+        	android:contentDescription="@string/app_name"
+        	/>
+        <ImageButton 
+            android:id="@+id/filechoose"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginTop="6dp"
+        	android:src="@drawable/fold2"
+        	android:contentDescription="@string/app_name"/>
+        <ImageButton 
+            android:id="@+id/voice"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginTop="6dp"
+        	android:layout_marginRight="20dp"
+        	android:src="@drawable/voice_microphone"
+        	android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+   	  
+     <ListView
+         android:id="@+id/listview"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:layout_above="@id/choose_bar"
+         android:layout_below="@id/rl_top"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="10dp"
+         android:cacheColorHint="#00000000"
+         android:divider="@null"
+         android:dividerHeight="3dp"
+         android:listSelector="#00000000"
+         android:scrollbars="none" />
+ 
+        <!-- android:cacheColorHint="#00000000" 选中时亮色为背景色 -->
+   	   <!-- android:divider="@null"分割线为空 -->
+</RelativeLayout>
